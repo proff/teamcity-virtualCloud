@@ -61,7 +61,6 @@ class VirtualCloudInstance(val cloudImage: VirtualCloudImage, val myName: String
 
     override fun containsAgent(agentDescription: AgentDescription): Boolean {
         val agent = server.buildAgentManager.getRegisteredAgents<SBuildAgent>().firstOrNull { it.availableParameters[VirtualCloudConstants.CONFIG_KEY_PARAM_NAME] == cloudImage.path }
-        File("d:/containsAgent").appendText(agentDescription.toString() + "\n\n" + agentDescription.availableParameters + "\n\n" + agent + "\n\n")
         return agent != null
     }
 }

@@ -32,7 +32,6 @@ class VirtualCloudClient(val server: SBuildServer, val state: CloudState, val pa
             result.state = InstanceStatus.RUNNING
             result.start = Date()
         }*/
-        File("d:/findInstanceByAgent").appendText(agentDescription.toString() + "\n\n" + agentDescription.availableParameters + "\n\n" + result + "\n\n")
         return result
     }
 
