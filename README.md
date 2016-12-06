@@ -4,8 +4,8 @@ TeamCity Virtual Cloud plugin provides support of virtual cloud (authorize/unaut
 
 
 Can be used for:
-1. preview teamcity cloud integration without real cloud
-2. authorize agent on demand
+* preview teamcity cloud integration without real cloud
+* authorize agent on demand
 
 # Compatibility
 
